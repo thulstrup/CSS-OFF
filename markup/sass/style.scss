@@ -1,5 +1,11 @@
 @import "compass";
 
 html, body {
-  color: #000;
+  border: none;
+  padding: none;
+  margin: none;
+}
+
+body {
+  background: transparent image-url("noise.png");
 }
