@@ -1,60 +1,10 @@
-/*
-Syntax error: Invalid mixin include "@include "compass";".
-        on line 1 of /Users/sebastiandammark/Desktop/Projects/CSS-OFF/sass/style.sass
+@charset "UTF-8";
+html, body {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
 
-1: /Users/sebastiandammark/Desktop/Projects/CSS-OFF/sass/style.sass
-
-Backtrace:
-/Users/sebastiandammark/Desktop/Projects/CSS-OFF/sass/style.sass:1
-/Library/Ruby/Gems/1.8/gems/haml-3.0.24/lib/sass/engine.rb:659:in `parse_mixin_include'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.24/lib/sass/engine.rb:524:in `parse_directive'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.24/lib/sass/engine.rb:428:in `parse_line'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.24/lib/sass/engine.rb:328:in `build_tree'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.24/lib/sass/engine.rb:347:in `append_children'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.24/lib/sass/engine.rb:346:in `each'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.24/lib/sass/engine.rb:346:in `append_children'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.24/lib/sass/engine.rb:216:in `_to_tree'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.24/lib/sass/engine.rb:197:in `_render'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.24/lib/sass/engine.rb:169:in `render'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.24/lib/haml/util.rb:294:in `silence_haml_warnings'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.24/lib/sass/engine.rb:169:in `render'
-/Users/sebastiandammark/.gem/ruby/1.8/gems/compass-0.10.6/lib/compass/compiler.rb:103:in `compile'
-/Users/sebastiandammark/.gem/ruby/1.8/gems/compass-0.10.6/lib/compass/logger.rb:43:in `red'
-/Users/sebastiandammark/.gem/ruby/1.8/gems/compass-0.10.6/lib/compass/compiler.rb:102:in `compile'
-/Users/sebastiandammark/.gem/ruby/1.8/gems/compass-0.10.6/lib/compass/compiler.rb:93:in `compile_if_required'
-/Users/sebastiandammark/.gem/ruby/1.8/gems/compass-0.10.6/lib/compass/compiler.rb:84:in `run'
-/Users/sebastiandammark/.gem/ruby/1.8/gems/compass-0.10.6/lib/compass/compiler.rb:82:in `each'
-/Users/sebastiandammark/.gem/ruby/1.8/gems/compass-0.10.6/lib/compass/compiler.rb:82:in `run'
-/Users/sebastiandammark/.gem/ruby/1.8/gems/compass-0.10.6/lib/compass/commands/watch_project.rb:92:in `recompile'
-/Library/Ruby/Site/1.8/rubygems/custom_require.rb:36:in `to_proc'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.24/vendor/fssm/lib/fssm/path.rb:71:in `call'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.24/vendor/fssm/lib/fssm/path.rb:71:in `run_callback'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.24/vendor/fssm/lib/fssm/path.rb:54:in `callback_action'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.24/vendor/fssm/lib/fssm/path.rb:34:in `update'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.24/vendor/fssm/lib/fssm/state/directory.rb:32:in `modified'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.24/vendor/fssm/lib/fssm/state/directory.rb:31:in `each'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.24/vendor/fssm/lib/fssm/state/directory.rb:31:in `modified'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.24/vendor/fssm/lib/fssm/state/directory.rb:16:in `refresh'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.24/vendor/fssm/lib/fssm/backends/fsevents.rb:15:in `add_handler'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.24/vendor/fssm/lib/fssm/backends/fsevents.rb:14:in `each'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.24/vendor/fssm/lib/fssm/backends/fsevents.rb:14:in `add_handler'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.24/vendor/fssm/lib/fssm/backends/rubycocoa/fsevents.rb:107:in `call'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.24/vendor/fssm/lib/fssm/backends/rubycocoa/fsevents.rb:107:in `initialize'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.24/vendor/fssm/lib/fssm/backends/fsevents.rb:27:in `call'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.24/vendor/fssm/lib/fssm/backends/fsevents.rb:27:in `CFRunLoopRun'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.24/vendor/fssm/lib/fssm/backends/fsevents.rb:27:in `run'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.24/vendor/fssm/lib/fssm/monitor.rb:24:in `run'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.24/vendor/fssm/lib/fssm.rb:17:in `monitor'
-/Users/sebastiandammark/.gem/ruby/1.8/gems/compass-0.10.6/lib/compass/commands/watch_project.rb:61:in `perform'
-/Users/sebastiandammark/.gem/ruby/1.8/gems/compass-0.10.6/lib/compass/commands/base.rb:18:in `execute'
-/Users/sebastiandammark/.gem/ruby/1.8/gems/compass-0.10.6/lib/compass/commands/project_base.rb:19:in `execute'
-/Users/sebastiandammark/.gem/ruby/1.8/gems/compass-0.10.6/lib/compass/exec/sub_command_ui.rb:38:in `perform!'
-/Users/sebastiandammark/.gem/ruby/1.8/gems/compass-0.10.6/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Users/sebastiandammark/.gem/ruby/1.8/gems/compass-0.10.6/bin/compass:26
-/usr/bin/compass:19:in `load'
-/usr/bin/compass:19
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid mixin include \"@include \"compass\";\".\A         on line 1 of /Users/sebastiandammark/Desktop/Projects/CSS-OFF/sass/style.sass\A \A 1: /Users/sebastiandammark/Desktop/Projects/CSS-OFF/sass/style.sass"; }
+body {
+  background: transparent url('../images/noise.png?1319204469');
+}
