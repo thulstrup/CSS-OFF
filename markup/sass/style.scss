@@ -1,11 +1,2 @@
-@import "compass";
-
-html, body {
-  border: none;
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  background: transparent image-url("noise.png");
-}
+/* Fonts --------------------------------------------------------------------- */
+@import "partials/defaults";
