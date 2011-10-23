@@ -20,17 +20,30 @@ html {
   
 body {
   @include open-sans;
-  background: #80C1D6 image-url("noise-blue.png", false, false);
+  background: $blue image-url("noise-blue.png", false, false);
+  color:#FFF;
 }
 
 
 /* Links --------------------------------------------------------------------- */
+a {
+  &:hover, &:active {
+    outline: none;
+  }
+  &:link, &:visited {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  &:focus, &:hover, &:active {
+    color: $orange;
+  }
+}
 
 
 /* Headings ------------------------------------------------------------------ */
 h1,h2, h3, h4, h5, h6 {
   @include komika-title;
-  color:#FFF;
   text-transform:uppercase;
 }
 
@@ -47,7 +60,7 @@ input {
   &[type=email], &[type=text], &[type=url] {
     @include komika-title;
     @include adjust-font-size-to(16px);
-    background:#FE6336;
+    background:$orange;
     border:none;
     color:#FFF;
   }
@@ -66,16 +79,12 @@ header[role=banner], nav, section, footer {
 header[role=banner] {
   text-align:center;
   h1 {
-    color:#FFF;
-    @include single-text-shadow(#FE6537, 3px, 3px);
+    @include single-text-shadow($orange, 3px, 3px);
   }
   h2 {
     @include adjust-font-size-to(52px);
     @include single-text-shadow(#F2F2F2, 3px, 3px);
-    color:#FE6537;
-  }
-  strong {
-    color:#FFF;
+    color:$orange;
   }
 }
 
@@ -96,12 +105,12 @@ nav {
   border-color:#EF6035;
   border-color:rgba(#000, .08);
   li {
-    background:#80B238;
+    background:$green;
   }
 }
 
 #prizes {
-  background:#80B238;
+  background:$green;
   border-style:solid;
   border-width:7px 0;
   border-color:#76A434;
@@ -117,5 +126,5 @@ nav {
   @include digital-dream;
   @include adjust-font-size-to(140px);
   @include single-text-shadow(#000, 6px, 8px);
-  color:#F5EB00;
+  color:$yellow;
 }

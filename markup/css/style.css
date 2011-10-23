@@ -48,13 +48,25 @@ html {
 body {
   font-family: "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: #80c1d6 url('../images/noise-blue.png');
+  color: #FFF;
 }
 
 /* Links --------------------------------------------------------------------- */
+a:hover, a:active {
+  outline: none;
+}
+a:link, a:visited {
+  color: #FFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:focus, a:hover, a:active {
+  color: #fe6336;
+}
+
 /* Headings ------------------------------------------------------------------ */
 h1, h2, h3, h4, h5, h6 {
   font-family: "KomikaTitle", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #FFF;
   text-transform: uppercase;
 }
 
@@ -81,7 +93,7 @@ input[type=email], input[type=text], input[type=url] {
   font-family: "KomikaTitle", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.143em;
   line-height: 1.313em;
-  background: #FE6336;
+  background: #fe6336;
   border: none;
   color: #FFF;
 }
@@ -97,17 +109,13 @@ header[role=banner] {
   text-align: center;
 }
 header[role=banner] h1 {
-  color: #FFF;
-  text-shadow: #fe6537 3px 3px 1px;
+  text-shadow: #fe6336 3px 3px 1px;
 }
 header[role=banner] h2 {
   font-size: 3.714em;
   line-height: 1.212em;
   text-shadow: #f2f2f2 3px 3px 1px;
-  color: #FE6537;
-}
-header[role=banner] strong {
-  color: #FFF;
+  color: #fe6336;
 }
 
 nav {
@@ -128,11 +136,11 @@ nav a {
   border-color: rgba(0, 0, 0, 0.08);
 }
 #obstacles li {
-  background: #80B238;
+  background: #80b238;
 }
 
 #prizes {
-  background: #80B238;
+  background: #80b238;
   border-style: solid;
   border-width: 7px 0;
   border-color: #76A434;
@@ -149,5 +157,5 @@ nav a {
   font-size: 10em;
   line-height: 1.05em;
   text-shadow: black 6px 8px 1px;
-  color: #F5EB00;
+  color: #f5eb00;
 }
