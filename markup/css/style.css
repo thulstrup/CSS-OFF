@@ -122,6 +122,10 @@ nav a {
 
 #obstacles {
   background: #FE6638;
+  border-style: solid;
+  border-width: 7px 0;
+  border-color: #EF6035;
+  border-color: rgba(0, 0, 0, 0.08);
 }
 #obstacles li {
   background: #80B238;
@@ -129,11 +133,21 @@ nav a {
 
 #prizes {
   background: #80B238;
+  border-style: solid;
+  border-width: 7px 0;
+  border-color: #76A434;
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+#submission {
+  border-top: 7px solid #76B2C5;
+  border-color: rgba(0, 0, 0, 0.08);
 }
 
 #clock {
   font-family: "DigitalDream", Monaco, Courier, monospace, sans-serif;
   font-size: 10em;
   line-height: 1.05em;
+  text-shadow: black 6px 8px 1px;
   color: #F5EB00;
 }

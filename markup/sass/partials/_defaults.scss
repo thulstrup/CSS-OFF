@@ -91,6 +91,10 @@ nav {
 
 #obstacles {
   background:#FE6638;
+  border-style:solid;
+  border-width:7px 0;
+  border-color:#EF6035;
+  border-color:rgba(#000, .08);
   li {
     background:#80B238;
   }
@@ -98,10 +102,20 @@ nav {
 
 #prizes {
   background:#80B238;
+  border-style:solid;
+  border-width:7px 0;
+  border-color:#76A434;
+  border-color:rgba(#000, .08);
+}
+
+#submission {
+  border-top:7px solid #76B2C5;
+  border-color:rgba(#000, .08);
 }
 
 #clock {
   @include digital-dream;
   @include adjust-font-size-to(140px);
+  @include single-text-shadow(#000, 6px, 8px);
   color:#F5EB00;
 }
