@@ -1,0 +1,107 @@
+/* Fonts --------------------------------------------------------------------- */
+@import "partials/base";
+@import "partials/fonts";
+
+
+/* Reset --------------------------------------------------------------------- */
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+
+/* Root ---------------------------------------------------------------------- */
+@include establish-baseline;
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+  
+body {
+  @include open-sans;
+  background: #80C1D6 image-url("noise-blue.png", false, false);
+}
+
+
+/* Links --------------------------------------------------------------------- */
+
+
+/* Headings ------------------------------------------------------------------ */
+h1,h2, h3, h4, h5, h6 {
+  @include komika-title;
+  color:#FFF;
+  text-transform:uppercase;
+}
+
+h3 {
+  @include adjust-font-size-to(40px);
+  @include single-text-shadow(rgba(#000, .2), 5px, 5px);
+}
+
+
+/* Forms --------------------------------------------------------------------- */
+@include placeholder(#FFF);
+
+input {
+  &[type=email], &[type=text], &[type=url] {
+    @include komika-title;
+    @include adjust-font-size-to(16px);
+    background:#FE6336;
+    border:none;
+    color:#FFF;
+  }
+}
+
+
+/* Layout -------------------------------------------------------------------- */
+header[role=banner], nav, section, footer {
+  div {
+    margin: 0 auto;
+    max-width: px2em(940px);
+    padding:0 px2em(10px);
+  }
+}
+
+header[role=banner] {
+  text-align:center;
+  h1 {
+    color:#FFF;
+    @include single-text-shadow(#FE6537, 3px, 3px);
+  }
+  h2 {
+    @include adjust-font-size-to(52px);
+    @include single-text-shadow(#F2F2F2, 3px, 3px);
+    color:#FE6537;
+  }
+  strong {
+    color:#FFF;
+  }
+}
+
+nav {
+  background-color:#7AB9CD;
+  background-color:rgba(#0F2830, .05);
+  text-transform:uppercase;
+  a {
+    color:#FFF;
+    text-decoration:none;
+  }
+}
+
+#obstacles {
+  background:#FE6638;
+  li {
+    background:#80B238;
+  }
+}
+
+#prizes {
+  background:#80B238;
+}
+
+#clock {
+  @include digital-dream;
+  @include adjust-font-size-to(140px);
+  color:#F5EB00;
+}
