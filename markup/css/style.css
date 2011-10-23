@@ -106,6 +106,7 @@ header[role=banner] div, nav div, section div, footer div {
 }
 
 header[role=banner] {
+  margin-top: 35px;
   text-align: center;
 }
 header[role=banner] h1 {
@@ -119,13 +120,24 @@ header[role=banner] h2 {
 }
 
 nav {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
   background-color: #7AB9CD;
   background-color: rgba(15, 40, 48, 0.05);
   text-transform: uppercase;
 }
+nav ul, nav ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 nav a {
   color: #FFF;
   text-decoration: none;
+  float: left;
+  padding: 0px 26px;
 }
 
 #obstacles {

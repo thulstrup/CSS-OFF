@@ -77,6 +77,7 @@ header[role=banner], nav, section, footer {
 }
 
 header[role=banner] {
+  margin-top: 35px;
   text-align:center;
   h1 {
     @include single-text-shadow($orange, 3px, 3px);
@@ -89,12 +90,25 @@ header[role=banner] {
 }
 
 nav {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
   background-color:#7AB9CD;
   background-color:rgba(#0F2830, .05);
   text-transform:uppercase;
+
+  ul, ul li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+  }
+  
   a {
     color:#FFF;
     text-decoration:none;
+	float: left;
+	padding: 0px 26px;
   }
 }
 
