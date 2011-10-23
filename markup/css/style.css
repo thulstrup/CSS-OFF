@@ -25,6 +25,10 @@
 }
 
 /* Reset --------------------------------------------------------------------- */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
 html, body {
   padding: 0;
   margin: 0;
@@ -99,45 +103,56 @@ input[type=email], input[type=text], input[type=url] {
 }
 
 /* Layout -------------------------------------------------------------------- */
-header[role=banner] div, nav div, section div, footer div {
+header div, nav ul, section div, footer div {
   margin: 0 auto;
   max-width: 67.143em;
   padding: 0 0.714em;
 }
 
-header[role=banner] {
+header {
   margin-top: 35px;
   text-align: center;
 }
-header[role=banner] h1 {
+header h1 {
   text-shadow: #fe6336 3px 3px 1px;
 }
-header[role=banner] h2 {
+header h2 {
   font-size: 3.714em;
   line-height: 1.212em;
   text-shadow: #f2f2f2 3px 3px 1px;
   color: #fe6336;
+  margin: 0;
 }
 
 nav {
-  position: fixed;
-  width: 100%;
-  top: 0px;
-  left: 0px;
   background-color: #7AB9CD;
   background-color: rgba(15, 40, 48, 0.05);
-  text-transform: uppercase;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
-nav ul, nav ul li {
-  margin: 0;
-  padding: 0;
+nav h3 {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+nav ul {
   list-style: none;
+  margin-bottom: 0;
+}
+nav li {
+  float: left;
 }
 nav a {
+  font-size: 1.286em;
+  line-height: 2.333em;
   color: #FFF;
+  display: block;
   text-decoration: none;
-  float: left;
   padding: 0px 26px;
+  text-transform: uppercase;
 }
 
 #obstacles {
@@ -170,4 +185,15 @@ nav a {
   line-height: 1.05em;
   text-shadow: black 6px 8px 1px;
   color: #f5eb00;
+}
+
+footer {
+  text-align: center;
+}
+footer div, footer small {
+  border-top: 7px solid #76B2C5;
+  border-color: rgba(0, 0, 0, 0.08);
+}
+footer small {
+  display: block;
 }

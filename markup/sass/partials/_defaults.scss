@@ -4,6 +4,10 @@
 
 
 /* Reset --------------------------------------------------------------------- */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+  display:block;
+}
+
 html, body {
   padding: 0;
   margin: 0;
@@ -68,15 +72,13 @@ input {
 
 
 /* Layout -------------------------------------------------------------------- */
-header[role=banner], nav, section, footer {
-  div {
-    margin: 0 auto;
-    max-width: px2em(940px);
-    padding:0 px2em(10px);
-  }
+header div, nav ul, section div, footer div {
+  margin: 0 auto;
+  max-width: px2em(940px);
+  padding:0 px2em(10px);
 }
 
-header[role=banner] {
+header {
   margin-top: 35px;
   text-align:center;
   h1 {
@@ -86,29 +88,34 @@ header[role=banner] {
     @include adjust-font-size-to(52px);
     @include single-text-shadow(#F2F2F2, 3px, 3px);
     color:$orange;
+    margin:0;
   }
 }
 
 nav {
-  position: fixed;
-  width: 100%;
-  top: 0px;
-  left: 0px;
   background-color:#7AB9CD;
   background-color:rgba(#0F2830, .05);
-  text-transform:uppercase;
-
-  ul, ul li {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  h3 {
+    @include invisible;
   }
-  
+  ul {
+    list-style:none;
+    margin-bottom:0;
+  }
+  li {
+    float:left;
+  }
   a {
+    @include adjust-font-size-to(18px);
     color:#FFF;
+    display:block;
     text-decoration:none;
-	float: left;
-	padding: 0px 26px;
+    padding: 0px 26px;
+    text-transform:uppercase;
   }
 }
 
@@ -141,4 +148,15 @@ nav {
   @include adjust-font-size-to(140px);
   @include single-text-shadow(#000, 6px, 8px);
   color:$yellow;
+}
+
+footer {
+  text-align:center;
+  div, small {
+    border-top:7px solid #76B2C5;
+    border-color:rgba(#000, .08);
+  }
+  small {
+    display:block;
+  }
 }

@@ -39,6 +39,12 @@ $yellow: #F5EB00;
 }
 
 
+// Functions------------------------------------------------------------------
+@function px2em($target, $context:$base-font-size) {
+  @return (1em / $context) * $target;
+}
+
+
 // Mixins --------------------------------------------------------------------
 @mixin clearfix {
   // For modern browsers
@@ -68,6 +74,9 @@ $yellow: #F5EB00;
   }
 }
 
-@function px2em($target, $context:$base-font-size) {
-  @return (1em / $context) * $target;
+// Hide elements visually, but keep them available for screen-readers.
+@mixin invisible {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
 }
