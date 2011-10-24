@@ -1,0 +1,171 @@
+/* Header -------------------------------------------------------------------- */
+header div, nav ul, section div, footer div {
+  margin: 0 auto;
+  max-width: px2em(940px);
+  padding:0 px2em(10px);
+}
+
+header {
+  margin-top: 35px;
+  text-align:center;
+  h1 {
+    @include single-text-shadow($orange, 3px, 3px);
+  }
+  h2 {
+    @include adjust-font-size-to(52px);
+    @include single-text-shadow(#F2F2F2, 3px, 3px);
+    color:$orange;
+    margin:0;
+  }
+}
+
+
+/* Navigation ---------------------------------------------------------------- */
+nav {
+  background-color:#7AB9CD;
+  background-color:rgba(#0F2830, .05);
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  h3 {
+    @include invisible;
+  }
+  ul {
+    list-style:none;
+    margin-bottom:0;
+  }
+  li {
+    float:left;
+  }
+  a {
+    @include adjust-font-size-to(18px);
+    color:#FFF;
+    display:block;
+    text-decoration:none;
+    padding: 0px 26px;
+    text-transform:uppercase;
+  }
+}
+
+
+/* Obstacles ----------------------------------------------------------------- */
+#obstacles {
+  @extend .clearfix;
+  @include background-noise($orange);
+  border-style:solid;
+  border-width:7px 0;
+  border-color:#EF6035;
+  border-color:rgba(#000, .08);
+  ul {
+    float:left;
+    list-style:none;
+    margin:0;
+    padding:0;
+    width:50%;
+  }
+}
+
+.obstacle-thumbs {
+  li {
+    float:left;
+    margin:0 20px 20px 0;
+    &:nth-child(even) {
+      margin-right:0;
+    }
+  }
+  a {
+    @include border-radius(6px);
+    @include background-noise($green);
+    display:block;
+    padding:10px;
+    width:200px;
+    height:200px;
+    text-align:center;
+  }
+  img {
+    max-height:160px;
+  }
+}
+
+.obstacle-details {
+  li {
+    display:none;
+    &:target {
+      display:block;
+    }
+  }
+}
+
+
+/* Prizes -------------------------------------------------------------------- */
+#prizes {
+  @include background-noise($green);
+  border-style:solid;
+  border-width:7px 0;
+  border-color:#76A434;
+  border-color:rgba(#000, .08);
+  ul {
+    @extend .clearfix;
+    list-style:none;
+    margin:0;
+    padding:0;
+  }
+  li {
+    float:left;
+    margin:0 20px 20px 0;
+    &:nth-child(even) {
+      margin-right:0;
+    }
+  }
+}
+
+
+/* Submission ---------------------------------------------------------------- */
+#submission {
+  border-top:7px solid #76B2C5;
+  border-color:rgba(#000, .08);
+}
+
+#clock {
+  @include digital-dream;
+  @include adjust-font-size-to(140px);
+  @include single-text-shadow(#000, 6px, 8px);
+  color:$yellow;
+}
+
+
+/* Footer -------------------------------------------------------------------- */
+footer {
+  text-align:center;
+  div, small {
+    border-top:7px solid #76B2C5;
+    border-color:rgba(#000, .08);
+  }
+  section {
+    margin:0 auto;
+    width:50%;
+    overflow:hidden;
+    p {
+      float:left;
+      text-align:right;
+      margin-right:2%;
+      width:48%;
+      &:last-child {
+        float:right;
+        margin-left:2%;
+        margin-right:0;
+        text-align:left;
+      }
+    }
+  }
+  small {
+    display:block;
+  }
+}
+
+
+/* Utilities ----------------------------------------------------------------- */
+.clearfix {
+  @include clearfix;
+}

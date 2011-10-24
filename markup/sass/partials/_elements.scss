@@ -1,0 +1,72 @@
+/* Root ---------------------------------------------------------------------- */
+@include establish-baseline;
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+  
+body {
+  @include open-sans;
+  @include background-noise($blue);
+  color:#FFF;
+}
+
+
+/* Links --------------------------------------------------------------------- */
+a {
+  &:hover, &:active {
+    outline: none;
+  }
+  &:link, &:visited {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  &:focus, &:hover, &:active {
+    color: $orange;
+  }
+}
+
+
+/* Headings ------------------------------------------------------------------ */
+h1,h2, h3, h4, h5, h6 {
+  @include komika-title;
+  margin-top:0;
+  text-transform:uppercase;
+}
+
+h2 {
+  letter-spacing:1px;
+}
+
+h3 {
+  @include adjust-font-size-to(40px);
+  @include single-text-shadow(rgba(#000, .2), 5px, 5px);
+}
+
+
+/* Forms --------------------------------------------------------------------- */
+@include placeholder(#FFF);
+
+input {
+  &[type=email], &[type=text], &[type=url] {
+    @include komika-title;
+    @include adjust-font-size-to(16px);
+    background:$orange;
+    border:none;
+    color:#FFF;
+  }
+}
+
+
+/* Embedded content ---------------------------------------------------------- */
+img {
+  max-width:100%;
+  .ie6 & {
+    width:100%; // IE6 has no support for max-width.
+  }
+  .ie7 & {
+    -ms-interpolation-mode:bicubic; // Improves image quality when scaled in IE7.
+  }
+}

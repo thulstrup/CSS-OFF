@@ -1,0 +1,10 @@
+CACHE MANIFEST
+# rev 1
+CACHE:
+/index.html
+/css/style.css
+# /fonts/digitaldreamfat.eot
+# /fonts/digitaldreamfat.svg
+/images/logo.png
+NETWORK:
+*

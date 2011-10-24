@@ -80,3 +80,7 @@ $yellow: #F5EB00;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
 }
+
+@mixin background-noise($color) {
+  background:$color image-url("noise.png", false, false);
+}
