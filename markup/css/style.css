@@ -128,6 +128,10 @@ header {
   margin-top: 35px;
   text-align: center;
 }
+header::selection, header::-moz-selection, header::-o-selection, header::-webkit-selection {
+  background: white;
+  color: #80c1d6;
+}
 header h1 {
   text-shadow: #fe6336 3px 3px 1px;
 }
@@ -179,6 +183,10 @@ nav a {
   border-color: #EF6035;
   border-color: rgba(0, 0, 0, 0.08);
 }
+#obstacles::selection, #obstacles::-moz-selection, #obstacles::-o-selection, #obstacles::-webkit-selection {
+  background: white;
+  color: #fe6336;
+}
 #obstacles ul {
   float: left;
   list-style: none;
@@ -227,6 +235,10 @@ nav a {
   border-color: #76A434;
   border-color: rgba(0, 0, 0, 0.08);
 }
+#prizes::selection, #prizes::-moz-selection, #prizes::-o-selection, #prizes::-webkit-selection {
+  background: white;
+  color: #80b238;
+}
 #prizes ul {
   list-style: none;
   margin: 0;
@@ -257,6 +269,10 @@ nav a {
 /* Footer -------------------------------------------------------------------- */
 footer {
   text-align: center;
+}
+footer::selection, footer::-moz-selection, footer::-o-selection, footer::-webkit-selection {
+  background: red;
+  color: #80c1d6;
 }
 footer div, footer small {
   border-top: 7px solid #76B2C5;

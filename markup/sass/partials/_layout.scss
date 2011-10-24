@@ -8,6 +8,12 @@ header div, nav ul, section div, footer div {
 header {
   margin-top: 35px;
   text-align:center;
+
+	&::selection, &::-moz-selection, &::-o-selection, &::-webkit-selection {
+		background: rgb(255,255,255);
+		color: $blue;
+	}
+
   h1 {
     @include single-text-shadow($orange, 3px, 3px);
   }
@@ -57,6 +63,12 @@ nav {
   border-width:7px 0;
   border-color:#EF6035;
   border-color:rgba(#000, .08);
+
+	&::selection, &::-moz-selection, &::-o-selection, &::-webkit-selection {
+		background: rgb(255,255,255);
+		color: $orange;
+	}
+
   ul {
     float:left;
     list-style:none;
@@ -105,6 +117,12 @@ nav {
   border-width:7px 0;
   border-color:#76A434;
   border-color:rgba(#000, .08);
+
+	&::selection, &::-moz-selection, &::-o-selection, &::-webkit-selection {
+		background: rgb(255,255,255);
+		color: $green;
+	}
+
   ul {
     @extend .clearfix;
     list-style:none;
@@ -138,6 +156,12 @@ nav {
 /* Footer -------------------------------------------------------------------- */
 footer {
   text-align:center;
+
+	&::selection, &::-moz-selection, &::-o-selection, &::-webkit-selection {
+		background: red;
+		color: $blue;
+	}
+
   div, small {
     border-top:7px solid #76B2C5;
     border-color:rgba(#000, .08);
