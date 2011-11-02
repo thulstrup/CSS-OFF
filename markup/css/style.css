@@ -125,8 +125,11 @@ header div, nav ul, section div, footer div {
 }
 
 header {
+  position: relative;
   margin-top: 35px;
   text-align: center;
+  height: 713px;
+  overflow: hidden;
 }
 header::selection, header::-moz-selection, header::-o-selection, header::-webkit-selection {
   background: white;
@@ -151,6 +154,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 3;
 }
 nav h3 {
   position: absolute !important;

@@ -8,10 +8,9 @@ html {
   
 body {
   @include open-sans;
-  @include background-noise($blue);
+	@include background-noise($blue);
   color:#FFF;
 }
-
 
 /* Links --------------------------------------------------------------------- */
 a {
